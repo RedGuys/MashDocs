@@ -13,7 +13,7 @@
 - Никита
 - jaan
 - [Theo](https://theo.is-a.dev/)
-- NikSne
+- [NikSne](https://niksne.ru/)
 - Andrey и проекту OctoDiary
 - [Григорий](https://github.com/Grigoriy457)
 - [Den4ikSuperOstryyPer4ik](https://github.com/Den4ikSuperOstryyPer4ik)
