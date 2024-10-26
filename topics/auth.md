@@ -1,17 +1,17 @@
 # Авторизация
 
 <tldr>
-<p>Об работе авторизации и идентификация МЭШе</p>
+<p>О работе авторизации и идентификации МЭШа</p>
 </tldr>
 
 ## Авторизация
 
 МЭШ как продукт не имеет собственной системы авторизации и полностью полагается на OAuth2.
 
-| Регион | Провайдер OAuth2                                |
-|--------|-------------------------------------------------|
-| Москва | mos.ru                                          |
-| Тюмень | gosuslugi.ru и локальная myschool.72to.ru/login |
+| Регион | Провайдер OAuth2                                               |
+|--------|----------------------------------------------------------------|
+| Москва | mos.ru                                                         |
+| Другие | gosuslugi.ru, kauth [...ru/login](https://school.mos.ru/login) |
 
 ### mos.ru
 
@@ -53,7 +53,7 @@ Authorize URI: <code>https://esia.gosuslugi.ru/aas/oauth2/v2/ac?response_type=co
 Redirect URI: <code>https://myschool.72to.ru/v3/auth/esia/callback</code>
 </chapter>
 
-Используется в Тюмени. Вполне автоматизируется [пример](https://github.com/daniilak/auth-gosuslugi/blob/main/auth_gosuslugi/auth.py).
+Используется в Тюмени и других регионов. Вполне автоматизируется [пример](https://github.com/daniilak/auth-gosuslugi/blob/main/auth_gosuslugi/auth.py).
 
 ### myschool.72to.ru/login
 
