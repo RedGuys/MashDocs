@@ -8,4 +8,5 @@
 
     <toc-element topic="intro.md"/>
     <toc-element topic="auth.md"/>
+    <toc-element topic="chMOS.md"/>
 </instance-profile>
