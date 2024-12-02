@@ -1,0 +1,464 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Пуши",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://sandbox.kode.ru"
+    },
+    {
+      "url": "https://fcmtoken.googleapis.com"
+    }
+  ],
+  "paths": {
+    "/fb/updateToken2": {
+      "post": {
+        "tags": [
+          "default"
+        ],
+        "summary": "https://sandbox.kode.ru/fb/updateToken2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "profile": {
+                    "profile": {
+                      "last_name": "Архипов",
+                      "first_name": "Иван",
+                      "middle_name": "Иванович",
+                      "birth_date": "1992-11-12",
+                      "sex": null,
+                      "user_id": 38014861,
+                      "id": 31799893,
+                      "contract_id": null,
+                      "phone": "6666666666",
+                      "email": "vanya.arkhipov.75@bk.ru",
+                      "snils": "756-253-684 30",
+                      "type": "parent"
+                    },
+                    "children": [
+                      {
+                        "last_name": "Архипова",
+                        "first_name": "Инна",
+                        "middle_name": "Ивановна",
+                        "birth_date": "2010-10-10",
+                        "sex": "female",
+                        "user_id": 38014859,
+                        "id": 31799895,
+                        "contract_id": null,
+                        "phone": "79502144456",
+                        "email": "mk@ko.hp",
+                        "snils": "903-317-576 87",
+                        "type": null,
+                        "school": {
+                          "id": 7885,
+                          "name": "Тестовый Детский сад № 99999\t",
+                          "short_name": null,
+                          "county": null,
+                          "principal": null,
+                          "phone": null
+                        },
+                        "class_name": "8-Ж",
+                        "class_level_id": 8,
+                        "class_unit_id": 548737,
+                        "groups": [
+                          {
+                            "id": 7153311,
+                            "name": "Биология 8Ж 8",
+                            "subject_id": 33623636,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8311027,
+                            "name": "Физическая культура 8Ж 8 Ж",
+                            "subject_id": 33623580,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8031231,
+                            "name": "Алгебра 8Ж МЕТА",
+                            "subject_id": 33623648,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153459,
+                            "name": "Алгебра 8-Ж 2гр ",
+                            "subject_id": 33623648,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7427014,
+                            "name": "Теория вероятностей и математическая статистика 8Ж 8",
+                            "subject_id": 33623573,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8031231,
+                            "name": "Алгебра 8Ж МЕТА",
+                            "subject_id": 33623648,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153313,
+                            "name": "История России. Всеобщая история 8Ж 8",
+                            "subject_id": 33623646,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8191414,
+                            "name": "Компьютерная графика 8Ж 8 Ж",
+                            "subject_id": 33673261,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153314,
+                            "name": "Русский язык 8Ж 8",
+                            "subject_id": 33623590,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153459,
+                            "name": "Алгебра 8-Ж 2гр ",
+                            "subject_id": 33623648,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153310,
+                            "name": "География 8Ж 8",
+                            "subject_id": 33623620,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8195352,
+                            "name": "Второй иностранный язык 8Ж 8 Ж",
+                            "subject_id": 33623618,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8191426,
+                            "name": "Компьютерная графика МЕТА",
+                            "subject_id": 33673261,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8416129,
+                            "name": "История России. Всеобщая история",
+                            "subject_id": 33623646,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 7153315,
+                            "name": "Литература 8Ж 8",
+                            "subject_id": 33623617,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 8195350,
+                            "name": "Китайский язык 8Ж 8 Ж",
+                            "subject_id": 33623665,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24310199,
+                            "name": "Кружок 2",
+                            "subject_id": null,
+                            "is_fake": true
+                          },
+                          {
+                            "id": 25554328,
+                            "name": "новая группа",
+                            "subject_id": null,
+                            "is_fake": true
+                          },
+                          {
+                            "id": 24310010,
+                            "name": "Кружок Инна",
+                            "subject_id": null,
+                            "is_fake": true
+                          }
+                        ],
+                        "representatives": [
+                          {
+                            "last_name": "Огафонова",
+                            "first_name": "Елизавета",
+                            "middle_name": "Владимировна",
+                            "birth_date": null,
+                            "sex": null,
+                            "user_id": null,
+                            "id": 35075954,
+                            "contract_id": null,
+                            "phone": "9001230001",
+                            "email": "ogofonovaev@mail.ru",
+                            "snils": "100-200-800 45",
+                            "type": null
+                          },
+                          {
+                            "last_name": "Архипов",
+                            "first_name": "Иван",
+                            "middle_name": "Иванович",
+                            "birth_date": null,
+                            "sex": null,
+                            "user_id": null,
+                            "id": 31799893,
+                            "contract_id": null,
+                            "phone": "6666666666",
+                            "email": "vanya.arkhipov.75@bk.ru",
+                            "snils": "756-253-684 30",
+                            "type": null
+                          }
+                        ],
+                        "sections": [
+                          {
+                            "id": 24310199,
+                            "name": "Кружок 2",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24310010,
+                            "name": "Кружок Инна",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929121,
+                            "name": "Нагрузочное тестирование 08.2021",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 25554328,
+                            "name": "новая группа",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929962,
+                            "name": "Новое тестовое объединение",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929341,
+                            "name": "Тестовое объединение",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929346,
+                            "name": "Тестовое объединение",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929983,
+                            "name": "Тестовый кружок 2",
+                            "subject_id": null,
+                            "is_fake": false
+                          },
+                          {
+                            "id": 24929995,
+                            "name": "Тест Тест кружка 2",
+                            "subject_id": null,
+                            "is_fake": false
+                          }
+                        ],
+                        "sudir_account_exists": false,
+                        "sudir_login": null,
+                        "is_legal_representative": true,
+                        "parallel_curriculum_id": 422902,
+                        "contingent_guid": "f43516f7-baf1-404c-925c-d6673ecb8e83"
+                      }
+                    ],
+                    "hash": "c2999714eed060aee47fffbb7294d2c121ce3c11da3cca6327a702354482d315"
+                  },
+                  "fcmToken": "fesCQ5LHA0fonPLC_OqNV2:APA91bHfT68JJrhjZ-qlm3CyqDxe1a7ibNm0ZlWkTL5tUvVUy0sbxOf-Pz2uc9n3B3GQvL1FuIC8gCAVs4YnNhO93VWpo7Gqvj90qzFfXDkEa0BnGkzI_RFfQb_sVZTyspIAABKs_0Xd",
+                  "platform": "ios",
+                  "udid": "D201F635-D268-41D0-BDD5-BC6895376C09"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "sandbox.kode.ru"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "application/json"
+          },
+          {
+            "name": "If-None-Match",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "*/*"
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "ru"
+          },
+          {
+            "name": "User-Agent",
+            "in": "header",
+            "schema": {
+              "type": "number"
+            },
+            "example": "%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%9C%D0%AD%D0%A8/1674649648 CFNetwork/1333.0.4 Darwin/21.5.0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/register": {
+      "post": {
+        "tags": [
+          "default"
+        ],
+        "summary": "https://fcmtoken.googleapis.com/register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": "X-osv=15.5&device=4842083553642271630&X-scope=*&plat=2&app=ru.mes.dnevnik&app_ver=3.8.14&X-cliv=fiid-8.0.0&sender=1034152410718&X-subtype=1034152410718&appid=fesCQ5LHA0fonPLC_OqNV2&apns_token=p_485f4f13142c5cf2ddf7488276b9107ba2595a6ffd0b08d936575624a81b21a1&gmp_app_id=1:1034152410718:ios:ebae67348a304f3c9afecf"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Host",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "fcmtoken.googleapis.com"
+          },
+          {
+            "name": "content-type",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "application/x-www-form-urlencoded"
+          },
+          {
+            "name": "accept",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "*/*"
+          },
+          {
+            "name": "x-firebase-client",
+            "in": "header",
+            "schema": {
+              "type": "number"
+            },
+            "example": "apple-platform/ios apple-sdk/19C51 appstore/false deploy/cocoapods device/iPhone11,8 fire-abt/8.0.0 fire-analytics/8.0.0 fire-fcm/8.0.0 fire-install/8.0.0 fire-ios/8.0.0 fire-perf/8.0.0 fire-rc/8.0.0 firebase-crashlytics/8.0.0 os-version/15.5 react-native-firebase-crashlytics/12.0.0 react-native-firebase/12.0.0 swift/true xcode/13C100"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "AidLogin 4842083553642271630:4157304599930679613"
+          },
+          {
+            "name": "x-firebase-client-log-type",
+            "in": "header",
+            "schema": {
+              "type": "integer"
+            },
+            "example": "0"
+          },
+          {
+            "name": "accept-language",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "ru"
+          },
+          {
+            "name": "app",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "ru.mes.dnevnik"
+          },
+          {
+            "name": "user-agent",
+            "in": "header",
+            "schema": {
+              "type": "number"
+            },
+            "example": "%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%B8%D0%BA%20%D0%9C%D0%AD%D0%A8/1674649648 CFNetwork/1333.0.4 Darwin/21.5.0"
+          },
+          {
+            "name": "info",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "EwM_zhxBU74XUO6eTSP7b7XYOBErXxg"
+          },
+          {
+            "name": "x-goog-firebase-installations-auth",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6MTAzNDE1MjQxMDcxODppb3M6ZWJhZTY3MzQ4YTMwNGYzYzlhZmVjZiIsImV4cCI6MTY3NTQxODcxOCwiZmlkIjoiZmVzQ1E1TEhBMGZvblBMQ19PcU5WMiIsInByb2plY3ROdW1iZXIiOjEwMzQxNTI0MTA3MTh9.AB2LPV8wRQIgHPmLw-NerWX2gKDzCjsbNmWDATjcImia2keBlLC4xdMCIQDWpbFIgNOecagViC-wpyGYQ30JQzSyf4KPCyuNK-kJow"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
