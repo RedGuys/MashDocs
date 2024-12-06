@@ -7,12 +7,15 @@
                  start-page="intro.md">
 
     <toc-element topic="intro.md"/>
+    <toc-element topic="auth.md"/>
+    <toc-element topic="chMOS.md"/>
     <toc-element topic="API.md">
-        <toc-element topic="API_Reference.md" toc-title="Pushes">
+        <toc-element toc-title="Pushes" topic="API_Reference.md">
             <toc-element topic="https_fcmtoken_googleapis_com_register.md"/>
             <toc-element topic="https_sandbox_kode_ru_fb_updateToken2.md"/>
         </toc-element>
+        <toc-element topic="API_Reference2.md">
+            <toc-element topic="sendByProfileIds_remote_build.md"/>
+        </toc-element>
     </toc-element>
-    <toc-element topic="auth.md"/>
-    <toc-element topic="chMOS.md"/>
 </instance-profile>

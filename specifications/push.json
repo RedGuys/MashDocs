@@ -1,0 +1,74 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"title": "Push-уведомление [done]",
+		"version": "1.0.0"
+	},
+	"servers": [
+		{
+			"url": "https://europe-west1-dnevnik-mes.cloudfunctions.net"
+		}
+	],
+	"paths": {
+		"/sendByProfileIds": {
+			"post": {
+				"tags": [
+					"default"
+				],
+				"summary": "sendByProfileIds (внешняя сборка)",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"example": {
+									"test": true,
+									"apiKey": "d2hFa6f3dssjNNkd-LHshjad-872nda31fPJ-asjkJDsKzbvd-fA9",
+									"profileIds": [
+										"10904199"
+									],
+									"message": {
+										"notification": {
+											"title": "Добрый вечер",
+											"body": "хорошего настроения!"
+										},
+										"data": {
+											"type": "deeplink",
+											"event_type": "news",
+											"news_id": "28105"
+										},
+										"apns": {
+											"payload": {
+												"aps": {
+													"sound": "default"
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"parameters": [
+					{
+						"name": "Content-Type",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "application/json"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		}
+	}
+}
