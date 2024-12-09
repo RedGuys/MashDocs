@@ -6,4 +6,8 @@
         <accepts>page.html</accepts>
     </rule>
     -->
+    <rule id="35407ea9">
+        <description>Created after removal of "Schemas" from MashDocs</description>
+        <accepts>Schemas.html</accepts>
+    </rule>
 </rules>

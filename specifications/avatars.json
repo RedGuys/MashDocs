@@ -1,0 +1,503 @@
+{
+	"openapi": "3.0.0",
+	"info": {
+		"title": "Аватары [done]",
+		"version": "1.0.0"
+	},
+	"servers": [
+		{
+			"url": "http://{{schoolurl}}"
+		},
+		{
+			"url": "http://{{presaleurl}}"
+		}
+	],
+	"tags": [
+		{
+			"name": "nginx"
+		},
+		{
+			"name": "nginx > avatarmanagement"
+		},
+		{
+			"name": "nginx > avatarmanagement > Неиспользуемые методы"
+		},
+		{
+			"name": "nginx > avatars"
+		},
+		{
+			"name": "presale"
+		},
+		{
+			"name": "presale > avatarmanagement"
+		},
+		{
+			"name": "presale > avatars"
+		}
+	],
+	"paths": {
+		"/api/avatarmanagement/v1/f2fcc6ee-4baa-45f2-a52f-7de82ba836aa": {
+			"delete": {
+				"tags": [
+					"nginx > avatarmanagement > Неиспользуемые методы"
+				],
+				"summary": "avatarmanagement/{user_id} - полностью удаляет все аватары",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"get": {
+				"tags": [
+					"nginx > avatarmanagement"
+				],
+				"summary": "avatarmanagement/{user_id} - получение списка аватаров",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					}
+				],
+				"responses": {
+					"undefined": {
+						"content": {
+							"text/plain": {
+								"schema": {
+									"type": "string"
+								},
+								"example": null
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [
+					"nginx > avatarmanagement"
+				],
+				"summary": "avatarmanagement/{user_id}  - загрузка аватара",
+				"requestBody": {
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"file": {
+										"type": "string",
+										"format": "binary"
+									},
+									"is_default": {
+										"type": "boolean",
+										"example": "true"
+									}
+								}
+							}
+						}
+					}
+				},
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					},
+					{
+						"name": "Authorization",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "Bearer {{accessToken}}"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/api/avatarmanagement/v1/f2fcc6ee-4baa-45f2-a52f-7de82ba836aa/171": {
+			"delete": {
+				"tags": [
+					"nginx > avatarmanagement"
+				],
+				"summary": "avatarmanagement/{avatar_id}/{image_id} - удаление выбранного аватара",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/api/avatarmanagement/v1/f2fcc6ee-4baa-45f2-a52f-7de82ba836aa/162": {
+			"patch": {
+				"tags": [
+					"nginx > avatarmanagement"
+				],
+				"summary": "avatarmanagement/{avatar_id}/{image_id} - назначение аватара основным",
+				"requestBody": {
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {}
+							}
+						}
+					}
+				},
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/avatars/f2fcc6ee-4baa-45f2-a52f-7de82ba836aa": {
+			"get": {
+				"tags": [
+					"nginx > avatars"
+				],
+				"summary": "avatars - получение основного аватара",
+				"parameters": [
+					{
+						"name": "Authorization",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "Bearer {{accessToken}}"
+					},
+					{
+						"name": "X-Mes-Subsystem",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "familymp"
+					},
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "image_id",
+						"in": "query",
+						"schema": {
+							"type": "integer"
+						},
+						"example": "185"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/avatar-management/f2fcc6ee-4baa-45f2-a52f-7de82ba836aa": {
+			"post": {
+				"tags": [
+					"presale > avatarmanagement"
+				],
+				"summary": "avatarmanagement",
+				"requestBody": {
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"file": {
+										"type": "string",
+										"format": "binary"
+									},
+									"is_default": {
+										"type": "boolean",
+										"example": "false"
+									}
+								}
+							}
+						}
+					}
+				},
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"get": {
+				"tags": [
+					"presale > avatarmanagement"
+				],
+				"summary": "avatarmanagement",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/avatar-management/{contingent_guid}/146": {
+			"delete": {
+				"tags": [
+					"presale > avatarmanagement"
+				],
+				"summary": "images/{image_id}",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "contingent_guid",
+						"in": "path",
+						"schema": {
+							"type": "string"
+						},
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			},
+			"patch": {
+				"tags": [
+					"presale > avatarmanagement"
+				],
+				"summary": "avatarmanagement/{avatar_id}",
+				"requestBody": {
+					"content": {}
+				},
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "is_default",
+						"in": "query",
+						"schema": {
+							"type": "boolean"
+						},
+						"example": "true"
+					},
+					{
+						"name": "contingent_guid",
+						"in": "path",
+						"schema": {
+							"type": "string"
+						},
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/avatar-management/{contingent_guid}": {
+			"delete": {
+				"tags": [
+					"presale > avatarmanagement"
+				],
+				"summary": "avatarmanagement",
+				"parameters": [
+					{
+						"name": "Auth-Token",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						},
+						"example": "{{accessToken}}"
+					},
+					{
+						"name": "contingent_guid",
+						"in": "path",
+						"schema": {
+							"type": "string"
+						},
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		},
+		"/avatar-service/{contingent_guid}": {
+			"get": {
+				"tags": [
+					"presale > avatars"
+				],
+				"summary": "avatars",
+				"parameters": [
+					{
+						"name": "contingent_guid",
+						"in": "path",
+						"schema": {
+							"type": "string"
+						},
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Successful response",
+						"content": {
+							"application/json": {}
+						}
+					}
+				}
+			}
+		}
+	}
+}

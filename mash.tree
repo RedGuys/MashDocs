@@ -10,6 +10,20 @@
     <toc-element topic="auth.md"/>
     <toc-element topic="chMOS.md"/>
     <toc-element topic="API.md">
+        <toc-element topic="API_Reference3.md">
+            <toc-element topic="avatars.md"/>
+            <toc-element topic="avatarmanagement3.md"/>
+            <toc-element topic="avatarmanagement_avatar_id_.md"/>
+            <toc-element topic="images_image_id_.md"/>
+            <toc-element topic="avatarmanagement2.md"/>
+            <toc-element topic="avatarmanagement.md"/>
+            <toc-element topic="avatars_get_main_avatar.md"/>
+            <toc-element topic="avatarmanagement_avatar_id_image_id_set_avatar_main.md"/>
+            <toc-element topic="avatarmanagement_avatar_id_image_id_deleting_selected_avatar.md"/>
+            <toc-element topic="avatarmanagement_user_id_fully_deletes_all_avatars.md"/>
+            <toc-element topic="avatarmanagement_user_id_avatar_upload.md"/>
+            <toc-element topic="avatarmanagement_user_id_get_avatars_list.md"/>
+        </toc-element>
         <toc-element toc-title="Pushes" topic="API_Reference.md">
             <toc-element topic="https_fcmtoken_googleapis_com_register.md"/>
             <toc-element topic="https_sandbox_kode_ru_fb_updateToken2.md"/>
